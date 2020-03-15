@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+{% block title %} RAM {% endblock %}
+{% block content %}
+        <h1 class="mt-5">RAM load</h1>
+        <ul class="lead" style="margin-left: 0; padding-left: 0;">
+            <li style="list-style-type: none;">RAM usage percent: {{ percent }}</li>
+            <li style="list-style-type: none;">Total RAM: {{ total }}GB</li>
+            <li style="list-style-type: none;">Available RAM: {{ available }}GB</li>
+            <li style="list-style-type: none;">Free RAM: {{ free }}GB</li>
+            <li style="list-style-type: none;">Used RAM: {{ used }}GB</li>
+        </ul>
+{% endblock %}

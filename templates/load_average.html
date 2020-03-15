@@ -1,0 +1,10 @@
+{% extends 'base.html'%}
+{% block title %} Load-average {% endblock %}
+{% block content %}
+        <h1 class="mt-5">Using CPU</h1>
+        <ul class="lead" style="margin-left: 0; padding-left: 0;">
+            <li style="list-style-type: none;">OS load in 1 minute: {{ load_average1 }}</li>
+            <li style="list-style-type: none;">OS load in 5 minutes: {{ load_average5 }}</li>
+            <li style="list-style-type: none;">OS load in 15 minutes: {{ load_average15 }}</li>
+        </ul>
+{% endblock %}
